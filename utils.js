@@ -39,7 +39,7 @@ export function readInputFileContents(url, filename = './input.txt') {
  *
  * @template T
  * @param {string} url 
- * @param {(line: string) => T} mapLine
+ * @param {(line: string, index: number) => T} mapLine
  * @returns {T[]}
  */
 export function readInput(url, mapLine = line => line) {
